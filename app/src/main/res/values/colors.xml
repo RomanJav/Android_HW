@@ -8,10 +8,4 @@
     <color name="color2">#009688</color>
     <color name="ButtonOne">#009688</color>
     <color name="ButtonTwo">#4CAF50</color>
-    <color name="flagWhite">#FFFFFF</color>
-    <color name="flagYellow">#FFE600</color>
-    <color name="flagBlue">#0027FF</color>
-    <color name="flagGreen">#00D80C</color>
-
 </resources>
-

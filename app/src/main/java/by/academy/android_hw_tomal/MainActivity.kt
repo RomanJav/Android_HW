@@ -22,8 +22,4 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, Hw1Activity::class.java)
         startActivity(intent)
     }
-    fun getHW2(view: View) {
-        val intent = Intent(this, Hw2Activity::class.java)
-        startActivity(intent)
-    }
 }
