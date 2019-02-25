@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Homework</string>
+    <string name="homework1">Home work 1</string>
+    <string name="homework2">Home work 2</string>
     <string name="Austria">Австрия</string>
     <string name="Poland">Польша</string>
     <string name="Columbia">Колумбия</string>

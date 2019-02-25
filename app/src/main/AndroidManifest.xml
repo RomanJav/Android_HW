@@ -14,12 +14,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Hw1Activity" android:parentActivityName=".MainActivity">
+        <activity android:name=".hw1.Hw1Activity" android:parentActivityName=".MainActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value=".MainActivity"/>
         </activity>
-        <activity android:name=".Hw2Activity" android:parentActivityName=".MainActivity">
+        <activity android:name=".hw2.Hw2Activity" android:parentActivityName=".MainActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value=".MainActivity"/>
