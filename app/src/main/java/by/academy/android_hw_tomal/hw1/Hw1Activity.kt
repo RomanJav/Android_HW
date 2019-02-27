@@ -1,4 +1,4 @@
-package by.academy.android_hw_tomal
+package by.academy.android_hw_tomal.hw1
 
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.support.annotation.RequiresApi
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import by.academy.android_hw_tomal.R
 
 class Hw1Activity : AppCompatActivity() {
     private lateinit var text1: TextView
@@ -16,7 +17,7 @@ class Hw1Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_hw1)
         text1 = findViewById(R.id.text1)
         text2 = findViewById(R.id.text2)
         button = findViewById(R.id.button)

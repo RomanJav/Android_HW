@@ -18,12 +18,8 @@ class MainActivity : AppCompatActivity() {
         btn_hw2=findViewById(R.id.btn_hw2)
     }
 
-    fun getHW1(view: View) {
+    fun getHomeWork1(view: View) {
         val intent = Intent(this, Hw1Activity::class.java)
-        startActivity(intent)
-    }
-    fun getHW2(view: View) {
-        val intent = Intent(this, Hw2Activity::class.java)
         startActivity(intent)
     }
 }

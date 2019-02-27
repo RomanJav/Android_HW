@@ -13,14 +13,13 @@
             android:text="Home work 1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="getHW1"
+            android:onClick="getHomeWork1"
     />
     <Button
             android:id="@+id/btn_hw2"
             android:text="Home work 2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="getHW2"
     />
 
 </LinearLayout>
