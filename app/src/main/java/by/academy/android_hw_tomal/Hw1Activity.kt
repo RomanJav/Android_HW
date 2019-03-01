@@ -16,7 +16,7 @@ class Hw1Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hw1)
+        setContentView(R.layout.activity_main)
         text1 = findViewById(R.id.text1)
         text2 = findViewById(R.id.text2)
         button = findViewById(R.id.button)
