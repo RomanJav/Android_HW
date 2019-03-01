@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">Homework</string>
+
     <string name="homework1">Home work 1</string>
     <string name="homework2">Home work 2</string>
     <string name="homework3">Home work 3</string>
+
     <string name="Austria">Австрия</string>
     <string name="Poland">Польша</string>
     <string name="Columbia">Колумбия</string>
@@ -10,4 +12,6 @@
     <string name="Denmark">Дания</string>
     <string name="Madagascar">Мадагаскар</string>
     <string name="Thailand">Таиланд</string>
+
+    <string name="btnSearch">Искать</string>
 </resources>

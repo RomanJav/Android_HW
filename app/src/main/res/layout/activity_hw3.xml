@@ -6,12 +6,36 @@
         android:layout_height="match_parent"
         android:background="@color/backgroundMain">
     <ImageView
+            android:id="@+id/image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/hsv"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="400dp"
-    />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+        <EditText
+                android:id="@+id/textImageURL"
+                style="@style/editTextStyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+    </HorizontalScrollView>
+    <Button
+            android:id="@+id/btnSearch"
+            android:text="@string/btnSearch"
+            style="@style/bthSearchStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/hsv"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>

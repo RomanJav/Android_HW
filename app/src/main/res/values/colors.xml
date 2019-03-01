@@ -12,6 +12,8 @@
     <color name="flagYellow">#FFE600</color>
     <color name="flagBlue">#0027FF</color>
     <color name="flagGreen">#00D80C</color>
+    <color name="textBackgroundDark">#7201443D</color>
+    <color name="textLight">#FFFFFF</color>
 
 </resources>
 
