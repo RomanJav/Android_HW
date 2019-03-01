@@ -10,16 +10,24 @@
 
     <Button
             android:id="@+id/btn_hw1"
-            android:text="Home work 1"
+            android:text="@string/homework1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="getHomeWork1"
+            android:onClick="startActivityHW1"
     />
     <Button
             android:id="@+id/btn_hw2"
-            android:text="Home work 2"
+            android:text="@string/homework2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="startActivityHW2"
+    />
+    <Button
+            android:id="@+id/btn_hw3"
+            android:text="@string/homework3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startActivityHW3"
     />
 
 </LinearLayout>
