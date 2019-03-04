@@ -39,16 +39,21 @@ class MainActivity : AppCompatActivity() {
 
     fun startActivityHW1(view: View) {
         startActivity(createIntent(baseContext, ACTIVITY_HW1))
+        overridePendingTransition(R.anim.animation_activity_up, R.anim.animation_activity_down)
     }
 
     fun startActivityHW2(view: View) {
         startActivity(createIntent(baseContext, ACTIVITY_HW2))
+        overridePendingTransition(R.anim.animation_activity_up, R.anim.animation_activity_down)
     }
 
     fun startActivityHW3(view: View) {
         startActivity(createIntent(baseContext, ACTIVITY_HW3))
+        overridePendingTransition(R.anim.animation_activity_up, R.anim.animation_activity_down)
     }
+
     fun startActivityHW4(view: View) {
         startActivity(createIntent(baseContext, ACTIVITY_HW4))
+        overridePendingTransition(R.anim.animation_activity_up, R.anim.animation_activity_down)
     }
 }
