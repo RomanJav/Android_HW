@@ -5,13 +5,44 @@
         android:layout_height="match_parent"
         android:background="@color/backgroundMain">
 
-
+    <RadioGroup
+            android:id="@+id/radioViews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        <RadioButton
+                android:id="@+id/owl_rb"
+                android:text="Owl"
+                style="@style/radioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+        <RadioButton
+                android:id="@+id/clock_rb"
+                android:text="Clock"
+                style="@style/radioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+        <RadioButton
+                android:id="@+id/diagram_rb"
+                android:text="Pie"
+                style="@style/radioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+    </RadioGroup>
     <by.academy.android_hw_tomal.hw4.custom_views.Clock
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/clock"/>
 
     <ImageView
             android:id="@+id/owl_image"
@@ -19,6 +50,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/owl_animation"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>
