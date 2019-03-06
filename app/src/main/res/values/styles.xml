@@ -30,4 +30,5 @@
         <item name="android:textColor">@color/color1</item>
         <item name="android:padding">10dp</item>
     </style>
+	
 </resources>
