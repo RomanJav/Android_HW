@@ -7,7 +7,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.RadioGroup
 import by.academy.android_hw_tomal.R
-import by.academy.android_hw_tomal.hw4.custom_views.Clock
+import by.academy.android_hw_tomal.hw4.custom_views.clockView.Clock
 
 class Hw4Activity : AppCompatActivity() {
     private lateinit var owlImage: ImageView

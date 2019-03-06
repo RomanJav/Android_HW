@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
         />
     </RadioGroup>
-    <by.academy.android_hw_tomal.hw4.custom_views.Clock
+    <by.academy.android_hw_tomal.hw4.custom_views.clockView.Clock
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
