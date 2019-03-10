@@ -36,4 +36,13 @@ class PaintCollection{
         style = Paint.Style.STROKE
         strokeWidth = 10F
     }
+    val piePartPaint = Paint().apply {
+        style = Paint.Style.FILL
+        strokeWidth = 0F
+    }
+    val pieLinePaint = Paint().apply {
+        color = Color.DKGRAY
+        style = Paint.Style.FILL
+        strokeWidth = 8F
+    }
 }

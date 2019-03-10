@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
         />
         <RadioButton
-                android:id="@+id/diagram_rb"
+                android:id="@+id/pie_rb"
                 android:text="Pie"
                 style="@style/radioButtonStyle"
                 android:layout_width="wrap_content"
@@ -39,10 +39,20 @@
     <by.academy.android_hw_tomal.hw4.custom_views.clockView.Clock
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/clock"/>
+
+    <by.academy.android_hw_tomal.hw4.custom_views.diagramView.Pie
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/pie"/>
 
     <ImageView
             android:id="@+id/owl_image"

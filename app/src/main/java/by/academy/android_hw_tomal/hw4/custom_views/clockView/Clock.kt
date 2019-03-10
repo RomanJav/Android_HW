@@ -21,6 +21,7 @@ class Clock @JvmOverloads constructor(
 
 
     override fun onDraw(canvas: Canvas?) {
+        super.onDraw(canvas)
         cHeight = height.toFloat()
         cWidth = width.toFloat()
         val minAttr = Math.min(cHeight, cWidth)
@@ -28,7 +29,6 @@ class Clock @JvmOverloads constructor(
         handTruncation = minAttr / 20
         hourHandTruncation = minAttr / 15
 
-        super.onDraw(canvas)
         /* Circle with hour lines*/
         rectF.set(cWidth / 2 - cRadius, cHeight / 2 - cRadius, cWidth / 2 + cRadius, cHeight / 2 + cRadius)
         canvas?.drawCircle(cWidth / 2, cHeight / 2, 15F, paint.dotPaint)
