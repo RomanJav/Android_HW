@@ -1,4 +1,4 @@
-package by.academy.android_hw_tomal.hw4
+package by.academy.hwTomal.hw4
 
 import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle

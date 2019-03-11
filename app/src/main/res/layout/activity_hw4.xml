@@ -36,26 +36,26 @@
                 android:layout_height="wrap_content"
         />
     </RadioGroup>
-    <by.academy.android_hw_tomal.hw4.custom_views.clockView.Clock
+    <by.academy.hwTomal.hw4.customViews.clockView.ClockView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/clock"/>
+            android:id="@+id/clockView"/>
 
-    <by.academy.android_hw_tomal.hw4.custom_views.diagramView.Pie
+    <by.academy.hwTomal.hw4.customViews.diagramView.PieView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/pie"/>
+            android:id="@+id/pieView"/>
 
     <ImageView
-            android:id="@+id/owl_image"
+            android:id="@+id/owlImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/owl_animation"
