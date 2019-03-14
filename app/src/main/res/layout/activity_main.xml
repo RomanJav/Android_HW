@@ -9,32 +9,39 @@
         android:background="@color/backgroundMain">
 
     <Button
-            android:id="@+id/btn_hw1"
+            android:id="@+id/btnHw1"
             android:text="@string/homework1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="startActivityHW1"
     />
     <Button
-            android:id="@+id/btn_hw2"
+            android:id="@+id/btnHw2"
             android:text="@string/homework2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="startActivityHW2"
     />
     <Button
-            android:id="@+id/btn_hw3"
+            android:id="@+id/btnHw3"
             android:text="@string/homework3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="startActivityHW3"
     />
     <Button
-            android:id="@+id/btn_hw4"
+            android:id="@+id/btnHw4"
             android:text="@string/homework4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="startActivityHW4"
+    />
+    <Button
+            android:id="@+id/btnHw5"
+            android:text="@string/homework5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startActivityHW5"
     />
 
 </LinearLayout>
