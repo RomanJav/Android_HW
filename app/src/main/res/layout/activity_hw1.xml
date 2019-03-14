@@ -5,7 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".hw1.Hw1Activity"
+        tools:context="by.academy.hwTomal.hw1.Hw1Activity"
         android:paddingTop="200dp">
 
     <TextView

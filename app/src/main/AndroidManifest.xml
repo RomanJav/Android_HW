@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="by.academy.android_hw_tomal">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.INTERNET" />
     <application android:allowBackup="true"
                  android:label="@string/app_name"
@@ -7,27 +9,38 @@
                  android:roundIcon="@mipmap/ic_launcher_round"
                  android:supportsRtl="true"
                  android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="by.academy.hwTomal.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".hw1.Hw1Activity" android:parentActivityName=".MainActivity">
+        <activity android:name="by.academy.hwTomal.hw1.Hw1Activity" android:parentActivityName="by.academy.hwTomal.MainActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value=".MainActivity"/>
+                    android:value="by.academy.hwTomal.MainActivity"/>
         </activity>
-        <activity android:name=".hw2.Hw2Activity" android:parentActivityName=".MainActivity">
+        <activity android:name="by.academy.hwTomal.hw2.Hw2Activity" android:parentActivityName="by.academy.hwTomal.MainActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value=".MainActivity"/>
+                    android:value="by.academy.hwTomal.MainActivity"/>
         </activity>
-        <activity android:name=".hw3.Hw3Activity" android:parentActivityName=".MainActivity">
+        <activity android:name="by.academy.hwTomal.hw3.Hw3Activity" android:parentActivityName="by.academy.hwTomal.MainActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value=".MainActivity"/>
+                    android:value="by.academy.hwTomal.MainActivity"/>
         </activity>
+        <activity android:name="by.academy.hwTomal.hw4.Hw4Activity" android:parentActivityName="by.academy.hwTomal.MainActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="by.academy.hwTomal.MainActivity"/>
+        </activity>
+        <activity android:name="by.academy.hwTomal.hw5.Hw5Activity" android:parentActivityName="by.academy.hwTomal.MainActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="by.academy.hwTomal.MainActivity"/>
+        </activity>
+        <service android:name="by.academy.hwTomal.hw5.CustomService" />
     </application>
 </manifest>

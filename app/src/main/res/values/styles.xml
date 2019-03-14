@@ -23,4 +23,11 @@
         <item name="android:padding">10dp</item>
         <item name="android:maxLines">1</item>
     </style>
+    <style name="radioButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/textBackgroundDark</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/color1</item>
+        <item name="android:padding">10dp</item>
+    </style>
 </resources>
