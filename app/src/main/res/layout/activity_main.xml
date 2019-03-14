@@ -43,5 +43,12 @@
             android:layout_height="wrap_content"
             android:onClick="startActivityHW5"
     />
+    <Button
+            android:id="@+id/btnHw6"
+            android:text="@string/homework5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startActivityHW6"
+    />
 
 </LinearLayout>

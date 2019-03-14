@@ -13,6 +13,7 @@ import by.academy.hwTomal.hw2.Hw2Activity
 import by.academy.hwTomal.hw3.Hw3Activity
 import by.academy.hwTomal.hw4.Hw4Activity
 import by.academy.hwTomal.hw5.Hw5Activity
+import by.academy.hwTomal.hw6.Hw6Activity
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         private val ACTIVITY_HW3 = Hw3Activity::class.java
         private val ACTIVITY_HW4 = Hw4Activity::class.java
         private val ACTIVITY_HW5 = Hw5Activity::class.java
+        private val ACTIVITY_HW6 = Hw6Activity::class.java
         private fun createIntent(context: Context, classActivity: Class<*>): Intent {
             return Intent(context, classActivity)
         }
@@ -88,6 +90,18 @@ class MainActivity : AppCompatActivity() {
             createIntent(
                 baseContext,
                 ACTIVITY_HW5
+            )
+        )
+        overridePendingTransition(
+            R.anim.animation_activity_up,
+            R.anim.animation_activity_down
+        )
+    }
+    fun startActivityHW6(view: View) {
+        startActivity(
+            createIntent(
+                baseContext,
+                ACTIVITY_HW6
             )
         )
         overridePendingTransition(
