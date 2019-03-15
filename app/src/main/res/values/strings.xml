@@ -6,6 +6,7 @@
     <string name="homework3">Home work 3</string>
     <string name="homework4">Home work 4</string>
     <string name="homework5">Home work 5</string>
+    <string name="homework6">Home work 6</string>
 
     <string name="Austria">Австрия</string>
     <string name="Poland">Польша</string>
@@ -16,5 +17,15 @@
     <string name="Thailand">Таиланд</string>
 
     <string name="btnSearch">Искать</string>
+    <string name="btnSave">Сохранить</string>
+    <string name="btnDelete">Удалить</string>
     <string name="btnCheck">Проверить состояние</string>
+    <string name="btnAddStudent">Добавить студента</string>
+
+    <string name="editPhoto">Изменить фото: </string>
+    <string name="editName">Изменить имя: </string>
+    <string name="editAge">Изменить возраст: </string>
+    <string name="addPhoto">Добавить фото: </string>
+    <string name="addName">Введите имя: </string>
+    <string name="addAge">Введите возраст: </string>
 </resources>

@@ -52,6 +52,8 @@
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value="by.academy.hwTomal.MainActivity"/>
         </activity>
+        <activity android:name="by.academy.hwTomal.hw6.action.EditStudentActivity"></activity>
+        <activity android:name="by.academy.hwTomal.hw6.action.CreateStudentActivity"></activity>
         <service android:name="by.academy.hwTomal.hw5.CustomService"/>
     </application>
 </manifest>
