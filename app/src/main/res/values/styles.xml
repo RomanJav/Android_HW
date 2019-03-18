@@ -7,6 +7,12 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="btnClassic">
+        <item name="android:textSize">22sp</item>
+        <item name="backgroundTint">@color/ButtonTwo</item>
+        <item name="android:textColor">@color/textLight</item>
+        <item name="android:textAlignment">center</item>
+    </style>
     <style name="bthSearchStyle">
         <item name="android:background">@color/ButtonTwo</item>
         <item name="android:textSize">22sp</item>

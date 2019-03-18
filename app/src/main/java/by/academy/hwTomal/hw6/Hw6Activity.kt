@@ -7,7 +7,8 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import by.academy.android_hw_tomal.R
 import by.academy.hwTomal.hw6.action.CreateStudentActivity
-import by.academy.hwTomal.hw6.itemBuilder.StudentsListAdapter
+import by.academy.hwTomal.hw6.adapter.StudentsListAdapter
+import by.academy.hwTomal.hw6.entity.StudentsListData
 import kotlinx.android.synthetic.main.activity_hw6.*
 
 class Hw6Activity : AppCompatActivity() {
@@ -30,7 +31,7 @@ class Hw6Activity : AppCompatActivity() {
         studentRecyclerView.adapter = studentAdapter
 
         createStudentButton.setOnClickListener {
-            it.context.startActivity(
+            startActivity(
                 createIntent(
                     baseContext,
                     CREATE_STUDENT
@@ -40,12 +41,18 @@ class Hw6Activity : AppCompatActivity() {
     }
 
     override fun onPause() {
-        studentAdapter.notifyDataSetChanged()
+        if (StudentsListData.isChanged) {
+            studentAdapter.notifyDataSetChanged()
+            StudentsListData.isChanged = false
+        }
         super.onPause()
     }
 
     override fun onResume() {
-        studentAdapter.notifyDataSetChanged()
+        if (StudentsListData.isChanged) {
+            studentAdapter.notifyDataSetChanged()
+            StudentsListData.isChanged = false
+        }
         super.onResume()
     }
 }

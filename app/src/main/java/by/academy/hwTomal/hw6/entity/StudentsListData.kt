@@ -2,6 +2,7 @@ package by.academy.hwTomal.hw6.entity
 
 object StudentsListData {
     val studentsList = ArrayList<Student>()
+    var isChanged = false
 
     init {
         studentsList.add(Student(1, "Riko Flex", 23, "https://pp.userapi.com/c851032/v851032817/db48c/3RCM_gJh2ZM.jpg"))

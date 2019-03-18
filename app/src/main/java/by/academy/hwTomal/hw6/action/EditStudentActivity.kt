@@ -20,11 +20,13 @@ class EditStudentActivity : AppCompatActivity(){
 
         btnSave.setOnClickListener{
             StudentsListData.editStudent(Student(studentId.toInt(), editName.text.toString(), (editAge.text.toString()).toInt(), editPhoto.text.toString()))
+            StudentsListData.isChanged = true
             onBackPressed()
         }
         btnDelete.setOnClickListener{
             StudentsListData.deleteStudent(studentId.toInt())
             onBackPressed()
+            StudentsListData.isChanged = true
         }
     }
 }
