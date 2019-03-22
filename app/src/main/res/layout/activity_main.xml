@@ -65,6 +65,14 @@
                     android:onClick="startActivityHW6"
                     style="@style/btnClassic"
             />
+            <Button
+                    android:id="@+id/btnHw7"
+                    android:text="@string/homework7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="startActivityHW7"
+                    style="@style/btnClassic"
+            />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
