@@ -25,8 +25,8 @@ class EditStudentActivity : AppCompatActivity(){
         }
         btnDelete.setOnClickListener{
             StudentsListData.deleteStudent(studentId.toInt())
-            onBackPressed()
             StudentsListData.isChanged = true
+            onBackPressed()
         }
     }
 }

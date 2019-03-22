@@ -12,12 +12,12 @@ class CreateStudentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_student)
 
-        val studentId = StudentsListData.studentsList.lastIndex + 1
+        var studentId = StudentsListData.studentsList.lastIndex
 
         btnSave.setOnClickListener {
             StudentsListData.addStudent(
                 Student(
-                    studentId,
+                    studentId+2,
                     editName.text.toString(),
                     (editAge.text.toString()).toInt(),
                     editPhoto.text.toString()
