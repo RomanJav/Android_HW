@@ -60,6 +60,8 @@
         </activity>
         <activity android:name="by.academy.hwTomal.hw6.action.EditStudentActivity"></activity>
         <activity android:name="by.academy.hwTomal.hw6.action.CreateStudentActivity"></activity>
+        <activity android:name="by.academy.hwTomal.hw7.action.EditStudentActivity"></activity>
+        <activity android:name="by.academy.hwTomal.hw7.action.CreateStudentActivity"></activity>
         <service android:name="by.academy.hwTomal.hw5.CustomService"/>
     </application>
 </manifest>

@@ -2,7 +2,7 @@ package by.academy.hwTomal.hw7.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.view.View
-import by.academy.hwTomal.hw6.entity.Student
+import by.academy.hwTomal.hw7.entity.Student
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.student_card_item.view.*
 
