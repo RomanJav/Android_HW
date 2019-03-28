@@ -39,12 +39,14 @@ class StudentListFragment : Fragment() {
         studentRecyclerView.adapter = studentAdapter
         studentAdapter.setOnItemClickListener(onItemClickListener)
         createStudentButton.setOnClickListener {
-            startActivity(
-                StudentListFragment.createIntent(
-                    context!!,
-                    StudentListFragment.CREATE_STUDENT
+            activity?.let {
+                startActivity(
+                    StudentListFragment.createIntent(
+                        it,
+                        StudentListFragment.CREATE_STUDENT
+                    )
                 )
-            )
+            }
         }
     }
 
