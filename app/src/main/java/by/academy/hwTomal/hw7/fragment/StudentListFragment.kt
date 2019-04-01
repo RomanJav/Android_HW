@@ -74,11 +74,14 @@ class StudentListFragment : Fragment() {
     private val onItemClickListener = object : StudentsListAdapter.OnItemClickListener {
         override fun onClick(item: Student) {
             (attachActivity as Updater).update(item.id)
+            if (StudentsListData.isChanged) {
+                studentAdapter.notifyDataSetChanged()
+                StudentsListData.isChanged = false
+            }
         }
     }
 
     interface Updater {
-
         fun update(id: Int)
     }
 }

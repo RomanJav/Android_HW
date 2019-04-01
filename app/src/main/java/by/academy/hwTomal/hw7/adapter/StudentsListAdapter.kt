@@ -24,7 +24,6 @@ class StudentsListAdapter : RecyclerView.Adapter<StudentsListViewHolder>() {
             } else {
                 val intent = Intent(viewGroup.context, EditStudentActivity::class.java)
                 intent.putExtra("ID", StudentsListData.studentsList[holder.adapterPosition].id.toString())
-                intent.putExtra("HOLDER", holder.adapterPosition)
                 it.context.startActivity(intent)
             }
         }

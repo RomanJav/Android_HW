@@ -35,16 +35,12 @@ class StudentEditFragment : Fragment() {
             StudentsListData.isChanged = true
             if (!StudentsListData.isEditInActivity)
                 activity?.onBackPressed()
-            else
-                activity?.recreate()
         }
         btnDelete.setOnClickListener {
             StudentsListData.deleteStudent(student.id)
             StudentsListData.isChanged = true
             if (!StudentsListData.isEditInActivity)
                 activity?.onBackPressed()
-            else
-                activity?.recreate()
         }
 
     }
