@@ -87,6 +87,7 @@ class MainActivity : AppCompatActivity() {
             R.anim.animation_activity_down
         )
     }
+
     fun startActivityHW5(view: View) {
         startActivity(
             createIntent(
@@ -99,6 +100,7 @@ class MainActivity : AppCompatActivity() {
             R.anim.animation_activity_down
         )
     }
+
     fun startActivityHW6(view: View) {
         startActivity(
             createIntent(
@@ -111,6 +113,7 @@ class MainActivity : AppCompatActivity() {
             R.anim.animation_activity_down
         )
     }
+
     fun startActivityHW7(view: View) {
         startActivity(
             createIntent(

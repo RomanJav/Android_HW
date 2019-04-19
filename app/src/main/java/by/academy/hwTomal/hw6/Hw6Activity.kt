@@ -10,6 +10,7 @@ import by.academy.hwTomal.hw6.action.CreateStudentActivity
 import by.academy.hwTomal.hw6.adapter.StudentsListAdapter
 import by.academy.hwTomal.hw6.entity.StudentsListData
 import kotlinx.android.synthetic.main.activity_hw6.*
+import kotlinx.coroutines.*
 
 class Hw6Activity : AppCompatActivity() {
     private val studentAdapter = StudentsListAdapter()
@@ -24,12 +25,10 @@ class Hw6Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hw6)
-
-        val linearLayoutManager = LinearLayoutManager(this)
+        loadStudents()
         studentRecyclerView.setHasFixedSize(true)
-        studentRecyclerView.layoutManager = linearLayoutManager
+        studentRecyclerView.layoutManager = LinearLayoutManager(this)
         studentRecyclerView.adapter = studentAdapter
-
         createStudentButton.setOnClickListener {
             startActivity(
                 createIntent(
@@ -39,10 +38,16 @@ class Hw6Activity : AppCompatActivity() {
             )
         }
     }
+    private fun loadStudents() {
+        GlobalScope.launch(context = Dispatchers.Main) {
+            withContext(Dispatchers.Default) { StudentsListData.getStudents() }
+            studentAdapter.notifyDataSetChanged()
+        }
+    }
 
     override fun onPause() {
         if (StudentsListData.isChanged) {
-            studentAdapter.notifyDataSetChanged()
+            loadStudents()
             StudentsListData.isChanged = false
         }
         super.onPause()
@@ -50,7 +55,7 @@ class Hw6Activity : AppCompatActivity() {
 
     override fun onResume() {
         if (StudentsListData.isChanged) {
-            studentAdapter.notifyDataSetChanged()
+            loadStudents()
             StudentsListData.isChanged = false
         }
         super.onResume()
