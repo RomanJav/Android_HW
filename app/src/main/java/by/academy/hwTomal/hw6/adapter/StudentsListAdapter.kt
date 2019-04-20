@@ -16,11 +16,7 @@ class StudentsListAdapter : RecyclerView.Adapter<StudentsListViewHolder>() {
         val holder = StudentsListViewHolder(view)
         view.setOnClickListener {
             val intent = Intent(viewGroup.context, EditStudentActivity::class.java)
-            intent.putExtra("ID", StudentsListData.studentsList[holder.adapterPosition].id.toString())
-            intent.putExtra("NAME", StudentsListData.studentsList[holder.adapterPosition].fullName)
-            intent.putExtra("PHOTO", StudentsListData.studentsList[holder.adapterPosition].photo)
-            intent.putExtra("AGE", StudentsListData.studentsList[holder.adapterPosition].age.toString())
-            intent.putExtra("HOLDER", holder.adapterPosition)
+            intent.putExtra("ID", StudentsListData.studentsList[holder.adapterPosition].objectId)
             it.context.startActivity(intent)
         }
         return holder
